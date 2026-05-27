@@ -76,6 +76,9 @@ bindsym $mod+c            exec hyprpicker -a
 # logout menu
 bindsym $mod+Shift+e      exec wlogout
 
+# wallpaper picker
+bindsym $mod+Shift+w      exec waypaper --backend swww
+
 # ─── keybindings — sway control ───────────────────────────────────────────────
 bindsym $mod+Shift+q      kill
 bindsym $mod+Shift+r      reload
