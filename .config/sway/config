@@ -60,7 +60,7 @@ exec --no-startup-id swayidle -w \
 
 # ─── keybindings — applications ───────────────────────────────────────────────
 bindsym $mod+Return       exec $term
-bindsym $mod+d            exec $menu
+bindsym $mod+space        exec $menu
 bindsym $mod+e            exec thunar
 bindsym $mod+b            exec firefox
 bindsym $mod+ctrl+l       exec $locker
@@ -111,7 +111,6 @@ bindsym $mod+w            layout tabbed
 bindsym $mod+t            layout toggle split
 bindsym $mod+f            fullscreen
 bindsym $mod+Shift+space  floating toggle
-bindsym $mod+space        focus mode_toggle
 bindsym $mod+a            focus parent
 
 # splits
