@@ -13,7 +13,7 @@ fi
 # ─── core sway stack ──────────────────────────────────────────────────────────
 SWAY_PKGS=(
     sway
-    swaylock
+    swaylock-effects
     swayidle
     awww
     waybar
