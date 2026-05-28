@@ -1,29 +1,30 @@
-# swaylock configuration
+# swaylock-effects configuration
+# Takes a screenshot of your desktop, blurs it, and overlays the lock UI
 
-daemonize
+# grab live screenshot as background and blur it
+screenshots
+effect-blur=9x5
+effect-vignette=0.4:0.6
+
+# fade in smoothly
+fade-in=0.15
+
+# clock display
+clock
+timestr=%I:%M %p
+datestr=%A,  %B %d
+
+# behaviour
 ignore-empty-password
 show-failed-attempts
+indicator
 
-# use the same wallpaper as sway
-image=$HOME/.config/sway/wallpaper.jpg
-scaling=fill
+# indicator sizing
+indicator-radius=110
+indicator-thickness=8
+separator-color=00000000
 
-# blur effect (requires swaylock-effects from AUR if desired)
-# effect-blur=7x5
-# effect-vignette=0.5:0.5
-
-# clock (swaylock-effects)
-# clock
-# timestr=%H:%M
-# datestr=%a, %B %e
-
-# colors
-inside-color=1a1b26cc
-inside-clear-color=1a1b26cc
-inside-caps-lock-color=1a1b26cc
-inside-ver-color=7aa2f7cc
-inside-wrong-color=f7768ecc
-
+# ── ring colors ────────────────────────────────────────────────────────────────
 ring-color=414868ff
 ring-clear-color=9ece6aff
 ring-caps-lock-color=e0af68ff
@@ -31,17 +32,22 @@ ring-ver-color=7aa2f7ff
 ring-wrong-color=f7768eff
 
 line-uses-ring
+
+# ── inside fill ────────────────────────────────────────────────────────────────
+inside-color=1a1b26cc
+inside-clear-color=1a1b26cc
+inside-caps-lock-color=1a1b26ee
+inside-ver-color=1a1b26cc
+inside-wrong-color=1a1b26cc
+
+# ── key highlight ──────────────────────────────────────────────────────────────
 key-hl-color=7aa2f7ff
 caps-lock-key-hl-color=e0af68ff
 bs-hl-color=f7768eff
 
+# ── text ──────────────────────────────────────────────────────────────────────
 text-color=c0caf5ff
 text-clear-color=9ece6aff
 text-caps-lock-color=e0af68ff
 text-ver-color=7aa2f7ff
 text-wrong-color=f7768eff
-
-separator-color=00000000
-
-indicator-radius=100
-indicator-thickness=7
