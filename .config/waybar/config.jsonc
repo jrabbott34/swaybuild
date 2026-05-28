@@ -81,13 +81,15 @@
     // ── network ───────────────────────────────────────────────────────────
     "network": {
         "interval": 5,
-        "format-wifi": "  {essid}",
-        "format-ethernet": "  {ipaddr}",
-        "format-linked": "  {ifname} (no IP)",
-        "format-disconnected": "󰤭  Offline",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}",
-        "tooltip-format-wifi": "{essid}  {signalStrength}%\n{ipaddr}",
-        "tooltip-format-ethernet": "{ifname}\n{ipaddr}/{cidr}",
+        "format-wifi": "{icon} {signalStrength}%",
+        "format-ethernet": "󰈀",
+        "format-linked": "󰈀 (no IP)",
+        "format-disconnected": "󰤭",
+        "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+        "tooltip-format-wifi": "{icon} {essid}\nSignal: {signalStrength}%\nFrequency: {frequency} GHz\n󰩟 {ipaddr}/{cidr}\nGateway: {gwaddr}",
+        "tooltip-format-ethernet": "󰈀 {ifname}\n󰩟 {ipaddr}/{cidr}\nGateway: {gwaddr}",
+        "tooltip-format-linked": "󰈀 {ifname} — no IP",
+        "tooltip-format-disconnected": "󰤭 Disconnected",
         "on-click": "nm-connection-editor",
         "on-click-right": "alacritty -e nmtui"
     },
